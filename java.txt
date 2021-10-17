@@ -1,0 +1,53 @@
+Problema 1
+
+import java.util.Scanner;
+public class Tabuada {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		int n;
+		System.out.println("Digite um nímero inteiro: ");
+		n=in.nextInt();
+		for(int i=0;i<=10;i++);
+		System.out.println(n+"x"+i+"="+n*i+(n*i));
+	}
+
+}
+
+Problema 2
+
+import java.util.Scanner;
+public class Numero_menor {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String nome;
+		int idade;
+		String nomemenor;
+		String nomemaior;
+		int idademenor;
+		int idademaior;
+		for(int i=1;i<=10;i++) {
+			sc.nextLine();
+		}
+		System.out.println("Digite seu nome:");
+		nome=sc.nextLine();
+		System.out.println("Digite sua idade:");
+		idade=sc.nextInt();
+		idademaior= idade;
+		nomemaior=nome;
+		nomemenor=nome;
+		idademenor=idade;
+		if(idademaior>idade) {
+			idademaior= idade;
+			nomemaior=nome;
+		}else {
+			if(idademenor>idade) {
+				nomemenor=nome;
+				idademenor=idade;
+			}
+		}
+		System.out.println("A idade do mais novo é "+idademenor+" e o nome é "+nomemenor);
+		System.out.println("A idade do mais velho é "+idademaior+" e o nome é "+nomemaior);
+		}
+	}

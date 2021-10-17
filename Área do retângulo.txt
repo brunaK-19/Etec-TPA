@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class AreaRetangulo {
+
+	public static void main(String[] args) {  
+//Lado*Altura
+		Scanner in = new Scanner(System.in);
+//Váriavel
+		double lado,altura,area;
+//Pedir lado
+		System.out.println("Digite o valor do lado");
+//Pedir altura
+		System.out.println("Digite o valor da altura");
+//Armazenar
+		lado =in.nextDouble();
+		altura =in.nextDouble();
+        //Conta
+		area=lado*altura;
+		//interação com usuario -->escreva
+		System.out.println("A área do retângulo é:" + area);
+
+	}
+
+}

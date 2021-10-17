@@ -1,0 +1,35 @@
+PROBLEMA 1:
+
+import java.util.Scanner;
+
+public class NomeIdade {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		String nome,idade;
+		System.out.println("Digite seu nome:");
+		nome=in.next();
+		System.out.println("Digite sua idade:");
+		idade=in.next();
+		System.out.println(nome +", você tem " + idade + " anos.");
+	}
+
+}
+
+
+PROBLEMA 2:
+
+import java.util.Scanner;
+
+public class salario {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		double salario,dívida;		
+		System.out.println("Digite o valor do salário:");
+		salario=in.nextDouble(); 
+		dívida=salario*30/100;
+		System.out.println("O valor a ser gasto em dívidas é igual a:" + dívida);
+	}
+
+}

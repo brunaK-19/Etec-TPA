@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class PerimetroQuadrado {
+
+	public static void main(String[] args) { 
+//Lado+Lado+Lado+Lado
+		Scanner in = new Scanner(System.in);
+//Variavel
+		double lado,perimetro;
+//Pedir lado
+		System.out.println("Digite o valor do lado");
+//Armazenar
+		lado =in.nextDouble();
+		//Conta
+		perimetro=lado+lado+lado+lado;
+		//Interação com usuário -->escreva
+		System.out.println("O perímetro do quadrado é:" + perimetro);
+
+	}
+
+}
+

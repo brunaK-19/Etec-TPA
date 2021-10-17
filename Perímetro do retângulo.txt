@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class PerimetroRetangulo {
+
+	public static void main(String[] args) {
+//Lado+Altura+Lado+Altura
+		Scanner in= new Scanner(System.in);
+//Variavel
+		double lado,altura,perimetro;
+//Pedir lado
+		System.out.println("Digite o valor do  lado");
+//Pedir altura
+		System.out.println("Digite o valor da altura");
+//Armazenar
+		lado =in.nextDouble();
+		altura =in.nextDouble();
+		//Conta
+		perimetro=lado+altura+lado+altura;
+		//Interação com usuario -->escreva
+		System.out.println("O perímetro do retângulo é:" + perimetro);
+		
+
+	}
+
+}
