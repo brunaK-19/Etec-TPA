@@ -1,0 +1,46 @@
+Exercício 1
+
+import java.util.Scanner;
+public class vetor1 {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+        float[] nota=new float[10];
+        int soma=0;
+        for(int i=0;i<nota.length;i++){
+        System.out.println("Insira a nota do "+(i+1)+"° aluno:");
+        nota[i]= in.nextFloat();
+        soma+=nota[i];
+        }
+        float media=soma/nota.length;
+        System.out.println("A média das notas é: "+media);
+	}
+	
+}
+
+Exercício 2
+
+import java.util.Scanner;                                        
+public class vetor2 {                                            
+                                                                 
+	public static void main(String[] args) {                     
+		Scanner in=new Scanner(System.in);                       
+        int a,b;                                                 
+        int[]valor=new int[10];                                  
+        for(int i=0;i<10;i++) {                                  
+        	System.out.println("Digite um número:");             
+        	valor[i]=in.nextInt();                               
+        }                                                        
+        for(int i=0;i<10;i++) {                                  
+        	for(a=i+1;a<10;a++) {                                
+        		if(valor[i]>valor[a]);                           
+        		b=valor[i];                                      
+        		valor[i]=valor[a];                               
+        		valor[a]=b;                                      
+        	}                                                    
+        }                                                        
+	for(int i=0;i<10;i++) {                                      
+		System.out.println("Ordem crescente:"+valor[i]);         
+	}                                                            
+	}                                                            
+}                                                                
